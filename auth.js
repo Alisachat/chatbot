@@ -1,4 +1,3 @@
-cat > auth.js <<'EOF'
 import { google } from 'googleapis';
 
 export async function authorize() {
@@ -9,4 +8,3 @@ export async function authorize() {
   });
   return await auth.getClient();
 }
-EOF
